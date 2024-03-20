@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>해외건설중소기업수주지원센터</title>           	
+    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">  
+	<link rel="stylesheet" type="text/css" href="../resource/css/style.css">     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="../resource/js/ui.js"></script>   
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        
+        $("#headers").load("../inc/header.html");
+        $("#footers").load("../inc/footer.html");
+        
+        });
+    </script>
+</head>   
+
+<body>
+    <!--header-->
+    <header id="headers"></header>
+    <!--header-->
+    
+    <section class="subTop">
+        <div class="img2">
+            <div>
+                <p class="subTitle">진출가이드</p>
+                <p class="subText">중소기업수주지원센터의 진출가이드입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--wrapper-->
+    <div class="wrapper">
+
+        <section class="secMenu">
+            <ul>
+                <li class="on"><a href="oversea_law.html"><span>해외건설촉진법</span></a></li>                
+                <li><a href="oversea_declare.html"><span>해외건설업신고</span></a></li>
+                <li><a href="corp_establish.html"><span>현지법인설립신고</span></a></li>
+                <li><a href="status_report.html"><span>해외공사상황통보</span></a></li>
+                <li><a href="equipment_expert.html"><span>기자재반출입</span></a></li>
+            </ul>
+        </section>
+
+        <section class="pageTitle">
+            <h3>해외건설촉진법</h3>
+        </section>
+
+        <!--container-->
+        <div class="container">
+
+            <section class="guideArea">
+                <div class="guide-Tab">
+                    <!-- 메뉴 탭 -->
+                    <ul class="data entry">
+                        <li class="on" onClick="getLawFrame(1);">촉진법</li>
+                        <li onClick="getLawFrame(2);">동 시행령</li>
+                        <li onClick="getLawFrame(3);">동 시행규칙</li>
+                    </ul>
+                    <!-- /메뉴 탭 -->
+
+                    <div class="btnR more">
+                        <a class="btn" onClick="getLawFrame(4);">건설산업기본법</a>
+                        <a class="btn" onClick="getLawFrame(5);">대외무역법</a>
+                        <!--
+                        <img src="/images/btn/btn_law01.gif" alt="건설산업기본법"	class="btn" onClick="getLawFrame(4);">
+                        <img src="/images/btn/btn_law02.gif" alt="대외무역법" class="btn" onClick="getLawFrame(5);">
+                        -->
+                    </div>
+                </div>
+
+                <!-- law -->
+                <div class="law">
+                    <iframe id="ifrm" name="ifrm" src='http://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=206366#' width="100%" height="704px" frameborder="0"></iframe>
+                </div>
+                <!-- /law -->
+            </section>
+
+        </div>
+        <!--container-->
+
+    </div>
+    <!--wrapper-->
+    
+    <footer id="footers"></footer>
+
+</body>
+</html>

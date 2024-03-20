@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>해외건설중소기업수주지원센터</title>           	
+    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">  
+	<link rel="stylesheet" type="text/css" href="../resource/css/style.css">     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="../resource/js/ui.js"></script>   
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        
+        $("#headers").load("../inc/header.html");
+        $("#footers").load("../inc/footer.html");
+        
+        });
+    </script>
+</head>   
+
+<body>
+    <!--header-->
+    <header id="headers"></header>
+    <!--header-->
+    
+    <section class="subTop">
+        <div class="img6">
+            <div>
+                <p class="subTitle">진출통계</p>
+                <p class="subText">중소기업수주지원센터의 진출통계입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--wrapper-->
+    <div class="wrapper">
+
+        <section class="secMenu">
+            <ul>
+                <li><a href="total.html"><span>총괄현황</span></a></li>                
+                <li class="on"><a href="go_tab1.html"><span>진출현황</span></a></li>
+                <li><a href="report.html"><span>해외건설업신고현황</span></a></li>                                
+            </ul>
+        </section>
+
+        <section class="pageTitle">
+            <h3>진출현황</h3>
+        </section>
+
+        <!--container-->
+        <div class="container">
+
+            <section class="tab">
+                <ul>
+                    <li><a href="go_tab1.html">총괄현황</a></li>
+                    <li><a href="go_tab2.html">지역별</a></li>
+                    <li><a href="go_tab3.html">공종별</a></li>
+                    <li><a href="go_tab4.html">국가별</a></li>
+                    <li class="on"><a href="go_tab5.html">수행업종별</a></li>
+                </ul>
+            </section>
+
+            <!--table:.list 영역-->
+            <section class="list">
+
+                <div class="secTitle">
+                    <h4>수행업종별</h4>
+                    <p class="smBox">(단위 : 천미불)</p>
+                </div>
+
+                <div class="mobTable">
+                <!-- data -->
+                    <table class="data">
+                        <caption>수행업종별 표</caption>
+                        <colgroup>
+                            <col width="*">
+                            <col width="18%">
+                            <col width="18%">
+                            <col width="18%">
+                            <col width="18%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="rowgroup">업종</th>
+                                <th scope="col">누계</th>
+    <th scope="col">2022년</th>
+    <th scope="col">2023년</th>
+    <th scope="col">24년02월</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;종합건설업</td>
+                                <td class="bg">37,145,919</td>
+                                <td>119,515</td>
+                                <td>134,574</td>
+                                <td>1,799</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;전기공사업</td>
+                                <td class="bg">12,790,685</td>
+                                <td>510,601</td>
+                                <td>689,196</td>
+                                <td>2,058</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;정보통신공사업</td>
+                                <td class="bg">754,746</td>
+                                <td>11,772</td>
+                                <td>13,033</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;건설엔지니어링업</td>
+                                <td class="bg">3,408,110</td>
+                                <td>196,538</td>
+                                <td>152,731</td>
+                                <td>2,934</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;해외공사수주 및 개발업</td>
+                                <td class="bg">4,827,132</td>
+                                <td>4,408</td>
+                                <td>19,212</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;전문건설업</td>
+                                <td class="bg">23,076,411</td>
+                                <td>754,090</td>
+                                <td>826,762</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;환경전문공사업</td>
+                                <td class="bg">31,275</td>
+                                <td>2,280</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="nobt">
+                                <td class="title tl">&nbsp;&nbsp;&nbsp;주택건설/대지조성 사업</td>
+                                <td class="bg">0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /data -->
+                </div>
+
+                <hr class="gapShort" />
+
+                <!--Graph 영역-->  
+                <div class="graph visual nomb" id="go_chart3" style="height: 300px;padding-top:10px;padding-bottom:10px;">
+                    <span>
+                        <!--img src="/statistics/go_chart3.php" alt="공종별 차트"-->
+                    </span>
+                </div>
+                <!--Graph 영역-->  
+            </section>
+            <!--table:.list 영역-->
+
+        </div>
+        <!--container-->
+
+    </div>
+    <!--wrapper-->
+    
+    <footer id="footers"></footer>
+
+</body>
+</html>
