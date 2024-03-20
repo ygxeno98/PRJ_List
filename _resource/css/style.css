@@ -22,8 +22,17 @@ header > ul > li a {
 }
 
 .mainWrap {
-  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 760px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
   margin: 0 auto;
+  overflow-y: auto;
 }
 .mainLink {
   font-weight: bold;
@@ -32,9 +41,20 @@ header > ul > li a {
   display: block;
   padding: 10px;
 }
+.mainLink a:hover {
+  color: rgb(51, 87, 252);
+  text-decoration: underline;
+}
 
 footer {
   text-align: center;
   background-color: #fff;
   padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .mainWrap {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
