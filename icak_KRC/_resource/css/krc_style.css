@@ -15,6 +15,7 @@ header {
 }
 header .header-inner {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
 }
@@ -29,14 +30,14 @@ header .moMenu {
 }
 
 header nav {
-  width: 960px;
+  width: 900px;
   height: 90px;
   overflow: hidden;
   background-color: #fff;
   transition: height 0.3s;
 }
 header nav:hover {
-  height: 300px;
+  height: 340px;
 }
 header nav:hover ul.gnb > li::after,
 header nav:hover ul.gnb > li::before {
@@ -70,10 +71,10 @@ header nav ul.gnb > li:hover {
 }
 header nav ul.gnb > li > a {
   display: block;
-  width: 160px;
+  width: 180px;
   line-height: 90px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
   color: #222;
 }
 header nav ul.gnb > li > ul > li > a {
@@ -85,11 +86,85 @@ header nav ul.gnb > li > ul > li > a {
   border-top: 1px solid #eee;
 }
 
+main {
+  padding: 90px 0 70px 0;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* s: main-page */
+.mainTop {
+  position: relative;
+  height: 700px;
+}
+.mainTop .m-visual {
+  height: 540px;
+  background-color: #f0f0f0;
+}
+.mainTop .mTop-boxs {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 1200px;
+  z-index: 1;
+}
+.mainTop .mTop-boxs > div {
+  width: 49%;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.boardArea {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+.boardArea > div {
+  width: 30%;
+}
+.boardArea > div:nth-child(2) {
+  width: 40%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+.boardArea > div .mBox-layout {
+  border: 1px solid #ccc;
+}
+.boardArea > div .mBox1 {
+  margin-right: 40px;
+}
+.boardArea > div .mBox2 {
+  margin: 0 40px;
+}
+.boardArea > div .mBox3 {
+  margin-left: 40px;
+}
+/* e: main-page */
+
 footer {
   text-align: center;
   background-color: #fff;
+  border-top: 1px solid #ddd;
   padding: 20px;
 }
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner .bottomMenu > ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /** 테스트 **/
 .btnTest {
   position: relative;
