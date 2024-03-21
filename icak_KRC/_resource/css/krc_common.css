@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
+.svg-s {
+  position: relative;
+  font-family: "Material Symbols Outlined";
+}
+.svg-s u {
+  display: none;
+}
+
+.btnTest {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+}
+.btnTest::after {
+  content: "\e5d2";
+  font-size: 24px;
+  color: red;
+  font-weight: 900;
+}
+
 .mHover {
   cursor: pointer;
   transition: 0.5s;

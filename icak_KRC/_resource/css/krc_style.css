@@ -136,6 +136,7 @@ main {
   border-right: 1px solid #eaeaea;
 }
 .boardArea > div .mBox-layout {
+  height: 100%;
   border: 1px solid #ccc;
 }
 .boardArea > div .mBox1 {
@@ -146,6 +147,22 @@ main {
 }
 .boardArea > div .mBox3 {
   margin-left: 40px;
+}
+.boardArea .moreBtn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.boardArea .moreBtn::before {
+  content: "\e145";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 44px;
+  font-weight: 200;
 }
 /* e: main-page */
 
@@ -163,22 +180,6 @@ footer .inner .bottomMenu > ul {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-/** 테스트 **/
-.btnTest {
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-}
-.btnTest::after {
-  content: "\e5d2";
-  font-family: "Material Symbols Outlined";
-  font-size: 24px;
-  color: red;
-  font-weight: 900;
 }
 
 @media screen and (max-width: 480px) {
