@@ -1,4 +1,20 @@
 @charset "UTF-8";
+:root {
+  --bigFont: 1.56rem;
+  --sbigFont: 1.31rem;
+  --mdFont: 1.19rem;
+  --smFont: 0.88rem;
+  --color-grey: #999;
+  --color-deepblue: #2651b2;
+  --point-color: #1256dd;
+  --icon: "material symbols outlined";
+  /*
+  0.75rem(12);0.813rem(13);0.875rem(14);0.938rem(15);1.063rem(17);
+  1.125rem(18);
+  1.25rem(20);1.375rem(22);1.5rem(24);1.563rem(25);1.688rem(27);
+  1.875rem(30);2.5rem(40);2.813rem(45);3.125rem(50);3.75rem(60);
+  */
+}
 
 .svg-s {
   position: relative;

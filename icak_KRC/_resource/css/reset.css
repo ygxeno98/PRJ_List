@@ -4,40 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
-
-:root {
-  --main-big-title: 3.125rem;
-  --main-md-title: 1.875rem;
-  --main-md-font: 1.063rem;
-  --main-sm-font: 0.813rem;
-  --basic-font: 0.938rem;
-  --m-big-font: 2.077rem;
-  --m-semi-font: 1.308rem;
-  --m-md-font: 1rem;
-  --m-sm-font: 0.923rem;
-  --m-page-title: 1.846rem;
-  --m-page-sub-title: 1.538rem;
-  --ft-color-basic: #333;
-  --point-color-blue: #447def;
-  --menu-color: #1256dd;
-  --icon: "material symbols outlined";
-  /*
-  0.75rem(12);0.813rem(13);0.875rem(14);0.938rem(15);1.063rem(17);
-  1.125rem(18);
-  1.25rem(20);1.375rem(22);1.5rem(24);1.563rem(25);1.688rem(27);
-  1.875rem(30);2.5rem(40);2.813rem(45);3.125rem(50);3.75rem(60);
-  */
+@font-face {
+  font-family: "Giants-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
-}
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
   letter-spacing: -0.063em;
   font-weight: 400;
   color: #27292d;
