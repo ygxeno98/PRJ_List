@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url(../img/background.jpg) no-repeat center center;
+  background: #082f51 url(../img/background.jpg) no-repeat center center;
   background-size: cover;
 }
 .fullWrapper video {
