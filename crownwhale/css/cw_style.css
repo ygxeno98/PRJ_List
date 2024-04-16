@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.fullWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+}
+.sample {
+}
+.sample img {
+}
