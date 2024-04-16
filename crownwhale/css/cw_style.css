@@ -321,4 +321,35 @@ header > div a {
   .vertical_banner .list td.bnArea {
     font-size: 1em;
   }
+
+  /*회원가입*/
+  .join {
+    width: 95%;
+  }
+  .join > section {
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+  .join input {
+    font-size: 1.125em;
+  }
+  .join input::placeholder {
+    font-size: 1.125em;
+  }
+  .join .btn-member {
+    font-size: 1.25em;
+  }
+  .join .btn-member:hover {
+    background: #0aadaf;
+  }
+  .join .link-login {
+    text-align: right;
+    padding-right: 5px;
+  }
+  .join .link-login a {
+    display: inline-block;
+    font-size: 1.125em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
 }
