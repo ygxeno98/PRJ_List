@@ -41,7 +41,13 @@
 
                 <!--s:배너-->
                 <section class="banner">
-                    
+                    <div class="slideWrap">
+                        <div class="basic_slider">
+                          <img src="img/b01.png" class="sldimg" alt="">
+                          <img src="img/b02.png" class="sldimg" alt="">
+                          <img src="img/b03.png" class="sldimg" alt="">
+                        </div>
+                      </div>
                 </section>
                 <!--e:배너-->
 
@@ -67,13 +73,13 @@
                                     <td>카푸어</td>
                                     <td class="money">8,140,000</td>
                                     <td>2024.04.14</td>
-                                    <td class="bnArea"><a href="#" class="btnAgree">승인</a></td>
+                                    <td class="bnArea"><a href="#" class="wait">보류중</a></td>
                                 </tr>
                                 <tr>
                                     <td>또치</td>
                                     <td class="money">8,140,000</td>
                                     <td>2024.04.14</td>
-                                    <td class="bnArea"><a href="#" class="btnAgree">승인</a></td>
+                                    <td class="bnArea"><a href="#" class="check">확인중</a></td>
                                 </tr>
                                 <tr>
                                     <td>동파리</td>
@@ -112,7 +118,7 @@
                 <!--e:실시간출금현황-->
 
                 <!--s:실시간이벤트-->
-                <section class="banner">
+                <section>
                     <h3>실시간이벤트</h3>
                     <div class="inner">
                         <table class="normal">
@@ -162,7 +168,7 @@
                 <!--e:실시간이벤트-->
 
                 <!--s:공지사항-->
-                <section class="banner">
+                <section>
                     <h3>공시사항</h3>
                     <div class="inner">
                         <table class="normal">
@@ -216,6 +222,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
         const $wrap = $('.vertical_banner');
         const $list = $('.vertical_banner .list');
@@ -283,6 +290,12 @@
             mouseleave: function () {
                 $wrap.find('.list').css('animation-play-state', 'running');
             }
+        });
+    </script>
+    <script>
+        // 슬라이드 //
+        $('.basic_slider').bxSlider({
+            auto:true
         });
     </script>
 

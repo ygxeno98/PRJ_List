@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+@media screen and (max-width: 480px) {
+
+	html {font-size: 13px;}
+	body.active {
+		position: fixed;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden ;
+	}
+
+	.topNotice {
+		display: none;
+	}
+	
+	.sc_header {
+		width: 100%;
+		background-position: center center;		
+	}
+	
+	.sc_header .sc_util {
+		display: flex;
+		flex-direction: column;
+		padding-top: 0;
+	}
+	.sc_header .sc_util h1 img {
+		width: 70%;
+	}
+	.sc_header .sc_util > div {		
+		gap: 10px;
+		padding: 30px 0 0 0;
+	}
+	.sc_header .sc_util .userName {		
+		font-size: 15px;
+	}
+	.sc_header .sc_util .addMember {		
+		border-radius: 15px;
+		padding: 6px;
+	}
+	.sc_header .sc_util .addMember img {
+		width: 24px;
+	}
+	.sc_header .sc_util .money {
+		font-size: 20px;
+	}
+	.sc_header .sc_util .sc-logout {
+		line-height: 40px;
+		padding: 0 10px;
+		border-radius: 10px;
+	}
+	.sc_header .sc_util .sc-logout:hover {
+		background-color: #0037c2;
+	}
+
+	.sc_header .moMenu {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		display: block;
+		z-index: 999;
+	}
+	.sc_header .moMenu .btnMenu {
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-indent: -9999px;
+		background: url(../images/btn-menu.svg) no-repeat center center;	
+		background-size: cover;
+	}
+	.sc_header .moMenu .btnMenu.active {
+		display: block;
+		width: 50px;
+		height: 50px;
+		text-indent: -9999px;
+		background: url(../images/btn-close.svg) no-repeat center center;	
+		background-size: cover;	
+	}
+
+	.sc_header .sc_gnb {		
+		position: fixed;
+		left:100%;
+		top:0;
+		width: 100%;
+		height: 100vh;
+		background-color: #121212;
+		border-radius: 0;
+		z-index: 998;
+		transition: .3s;
+	}
+	.sc_header .sc_gnb.active {
+		left:0;
+	}
+	.sc_header .sc_gnb.active .moLogo {
+		display: block;
+		text-align: center;
+		padding: 5px 0 20px 20px;
+	}
+	.sc_header .sc_gnb.active .moLogo > img {
+		width: 58%;
+	}
+	.sc_header .sc_gnb > ul {
+		flex-direction: column;
+	}
+	.sc_header .sc_gnb > ul > li {
+		border-top: 1px solid #333;
+	}
+	.sc_header .sc_gnb > ul > li a {
+		font-size: 20px;
+		color: #fff;
+	}
+	.sc_header .sc_gnb > ul > li.on a {
+		border:none;
+	}
+		
+	.jackpot .jp-wrap {
+		width: 100%;
+		height: 230px;
+		margin: 0 auto;
+		background: url(../images/bg-jackpot.png) no-repeat center center;
+		background-size: cover;
+	}
+	.jackpot .jp-wrap .jp-money {
+		bottom: 45px;		
+		font-size: 35px;
+	}
+
+	.sc_wrapper {
+		width: 100%;
+		padding: 5px;
+	}
+
+	.sc_sub {
+		margin-top:20px;		
+	}
+		
+	.sc_subBox,
+	.sc_casino, 
+	.sc_slots, 
+	.sc_news {
+		padding: 20px 10px 20px 10px;
+		margin-bottom : 20px;
+	}
+	.sc_subBox {
+		padding: 30px 10px;
+	}
+	.sc-m-title {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.sc_inner {
+		width: 100%;
+	}
+	.sc_inner .sc_card {
+		width: 100%;
+	}
+	.sc_inner .sc_card li {	
+		width: 44%;
+		margin: 10px;
+	}
+	.sc_inner .sc_card li > div {
+		height: 210px;
+	}
+	.sc_inner .sc_card li > div .gameIcon {
+		height: 50px;
+	}
+	.sc_inner .sc_card li > div .gameIcon img {
+		height: 25px;
+	}
+	.sc_inner .sc_card li .sc-card-title {
+		font-size: 1rem;
+	}
+
+	.sc_news_inner {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.sc_news_inner > div h4 {	
+		color: #fff;
+		font-size: 20px;
+		line-height: 55px;
+	}
+	.sc_news_inner > div table td {
+		line-height: 40px;
+	}
+	
+	.sc_links {		
+		padding: 10px;
+	}
+
+	.sc-tab {
+		margin-top:30px;
+	}
+	.sc-tab a {
+		font-size: 18px;
+		padding: 15px 0;
+	}
+
+	.sc-moneyInfo {
+		margin-top: 20px;	
+	}
+	.sc-moneyInfo > p {
+		font-size: 16px;
+	}	
+	.sc-moneyInfo ul li {		
+		padding: 3px 0;
+		margin-left: 20px;
+	}
+	
+	.sc-moneyTable {
+		display: flex;
+		flex-direction: column;
+	}
+	.sc-moneyTable dl {
+		flex-direction: column;		
+		border-radius: 2px;
+	}
+	.sc-moneyTable dl dt {		
+		align-items: center;
+		width: 100%;	
+		padding: 10px;
+		font-weight: bold;
+	}
+	.sc-moneyTable dl dd {
+		width: 100%;
+		padding: 20px 5px;
+	}
+	.funcBtn {
+		flex-wrap: wrap;
+		justify-content: center;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	.funcBtn a {		
+		flex: 20%;
+	}
+	.sc-moneyTable .btn_big {
+		justify-content: center;
+		background-color: #6660dd;
+		padding: 20px;
+	}
+	.sc-moneyTable .btn_big:hover {
+		background-color: #4038db;
+	}
+
+	.sc-normalTb th,
+	.sc-normalTb td {
+		font-size: 12px;
+		font-weight: 200;
+	}
+	.sc-normalTb th:last-child,
+	.sc-normalTb td:last-child {		
+		padding: 3px;
+	}
+	.sc-normalTb td .sbn-del {		
+		padding: 10px 3px;
+	}
+	
+	.sc_login {	
+		width: 90%;
+		padding:20px;
+		padding-bottom:30px;
+	}
+	.sc_login h3 img {
+		width: 100%;
+	}
+	.sc_login input, .sc_login a {
+		font-size: 18px;
+		line-height: 60px;
+		padding: 0 20px;
+	}
+	
+	.sc_footer {
+		text-align: center;
+		padding: 30px;
+		border-top: 1px solid #333;
+		margin-top: 50px;
+	}
+}

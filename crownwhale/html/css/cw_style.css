@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+body {
+  font-size: 20px;
+}
+.fullWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #082f51 url(../img/background.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fullWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  width: 1200px;
+  height: 145px;
+  margin: 0 auto;
+}
+header > h1 {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+header > div {
+  text-align: right;
+  padding-top: 40px;
+}
+header > div a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 1200px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+.contents > section {
+  width: 580px;
+  height: 650px;
+  color: #fff;
+  padding: 40px 0;
+  background-color: rgba(13, 24, 42, 0.8);
+  border-radius: 30px;
+  box-shadow: 30px 30px 30px rgba(0,0,0,0.25);
+}
+.contents > section > h3 {
+  font-family: "Giants-Bold";
+  font-size: 35px;
+  color: #f9aa44;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 20px;
+}
+
+.contents > section .inner {
+  padding: 20px 40px;
+  overflow: hidden;
+}
+.contents > section .inner a {
+  color: #fff;
+}
+.contents > section .inner .normal td:first-child {
+  text-align: left;
+}
+.contents > section .inner .normal td {
+  text-align: right;
+  padding: 15px 0;
+}
+
+.contents .login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+.contents .login input {
+  width: 33%;
+  font-size: 1em;
+  line-height: 60px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 15px;
+}
+.contents .login input::placeholder {
+  font-size: 20px;
+  color: #999;
+  letter-spacing: -0.063rem;
+}
+.contents .login .btn-login,
+.contents .login .btn-join {
+  display: inline-block;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 15px;
+}
+.contents .login .btn-login {
+  background-color: #e76d00;
+  transition: 0.5s;
+}
+.contents .login .btn-login:hover {
+  background-color: #ff4040;
+}
+.contents .login .btn-join {
+  background-color: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
+}
+.contents .login .btn-join:hover {
+  background-color: #111;
+}
+
+.vertical_banner {
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+.vertical_banner .list td {
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.vertical_banner .list td:first-child {
+  text-align-last: left;
+}
+.vertical_banner .list td.money {
+  color: #ff9421;
+  font-weight: bold;
+}
+.vertical_banner .list td.bnArea {
+  text-align: right;
+  font-size: 18px;
+}
+.vertical_banner .list td.bnArea a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1c7aef;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.vertical_banner .list td.bnArea a:hover {
+  background-color: #269fb9;
+}
+
+@keyframes verticalRolling {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/*회원가입*/
+.join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 680px;
+  padding: 40px 0;
+  background-color: rgba(13, 24, 42, 0.8);
+  border-radius: 30px;
+}
+.join > section {
+  padding: 0 60px;
+}
+.join p {
+  padding: 7px 0;
+}
+.join input {
+  width: 100%;
+  font-size: 1em;
+  line-height: 70px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+}
+.join input::placeholder {
+  font-size: 1em;
+}
+.join .btn-member {
+  display: block;
+  line-height: 70px;
+  color: #fff;
+  background-color: #0072ff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.join .btn-member:hover {
+  background: #0aadaf;
+}
+.join .link-login {
+  text-align: right;
+  padding-right: 5px;
+}
+.join .link-login a {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Baneer */
+.banner {
+  position: relative;
+}
+.bx-controls-direction {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.bx-prev,
+.bx-next {
+  position: absolute;
+  top: 0;
+  display: block;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+}
+.bx-prev {
+  left: 10px;
+  background: url(../img/arrow-left.svg) no-repeat;
+}
+.bx-next {
+  right: 10px;
+  background: url(../img/arrow-right.svg) no-repeat;
+}
+
+.bx-pager {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+.bx-pager-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+.bx-pager-link {
+  display: block;
+  width: 15px;
+  height: 15px;
+  text-indent: -9999px;
+  border-radius: 50%;
+  background-color: #8b8b8b;
+}
+.bx-pager-link.active {
+  background-color: #fe5d5d;
+}
+
+/* 반응형 스타일 */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    width: 100%;
+    height: 205px;
+    padding: 0 15px;
+  }
+  header > h1 {
+    top: 60px;
+    left: 15px;
+  }
+  header > h1 img {
+    width: 370px;
+  }
+  header > div {
+    padding-top: 10px;
+  }
+  header .snsBtns img {
+    width: 40px;
+  }
+
+  .contents {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+  }
+  .contents > section {
+    width: 100%;
+    height: 550px;
+    padding: 30px 0;
+  }
+  .contents > section.banner {
+    height: 400px;
+  }
+  .contents > section > h3 {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  .contents > section .inner {
+    padding: 20px;
+  }
+
+  .contents .login {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contents .login input {
+    width: 100%;
+    font-size: 1.125em;
+    padding: 0 20px;
+  }
+  .contents .login input::placeholder {
+    font-size: 1.125em;
+    color: #999;
+    letter-spacing: -0.063rem;
+  }
+  .contents .login .btn-login,
+  .contents .login .btn-join {
+    display: block;
+    width: 100%;
+    font-size: 1.125em;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  .contents .login .btn-login {
+    background-color: #e76d00;
+    transition: 0.5s;
+  }
+  .contents .login .btn-login:hover {
+    background-color: #ff4040;
+  }
+  .contents .login .btn-join {
+    background-color: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+  }
+  .contents .login .btn-join:hover {
+    background-color: #111;
+  }
+
+  .vertical_banner {
+    height: 420px;
+  }
+  .vertical_banner .list td {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  .vertical_banner .list td.bnArea {
+    font-size: 1em;
+  }
+
+  /*회원가입*/
+  .join {
+    width: 95%;
+  }
+  .join > section {
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+  .join input {
+    font-size: 1.125em;
+  }
+  .join input::placeholder {
+    font-size: 1.125em;
+  }
+  .join .btn-member {
+    font-size: 1.25em;
+  }
+  .join .btn-member:hover {
+    background: #0aadaf;
+  }
+  .join .link-login {
+    text-align: right;
+    padding-right: 5px;
+  }
+  .join .link-login a {
+    display: inline-block;
+    font-size: 1.125em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  /* banner */
+  .bx-controls-direction {
+    top: 150px;
+    transform: translateY(0);
+  }
+
+  .basic_slider img {
+    margin-top:-20px;
+  }
+
+  .bx-pager {
+    bottom: 30px;
+}
