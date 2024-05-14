@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
-  --bigFont: 1.56rem;
-  --sbigFont: 1.31rem;
-  --mdFont: 1.19rem;
-  --smFont: 0.88rem;
+  --bigFont: 1.56em;
+  --sbigFont: 1.31em;
+  --mdFont: 1.19em;
+  --smFont: 0.88em;
   --color-grey: #999;
   --color-deepblue: #2651b2;
   --point-color: #1256dd;

@@ -2,7 +2,7 @@
 @import url("reset.css");
 @import url("krc_common.css");
 
-body {
+html, body {
   font-size: 16px;
 }
 body.active {
@@ -33,14 +33,14 @@ header .moMenu {
 }
 
 header nav {
-  width: 900px;
+  width: 800px;
   height: 90px;
   overflow: hidden;
   background-color: #fff;
   transition: height 0.3s;
 }
 header nav:hover {
-  height: 340px;
+  height: 240px;
 }
 header nav:hover ul.gnb > li::after,
 header nav:hover ul.gnb > li::before {
@@ -65,6 +65,7 @@ header nav ul.gnb {
   height: 100%;
 }
 header nav ul.gnb > li {
+  flex: 1;
   position: relative;
   text-align: center;
   transition: 0.3s;
@@ -74,7 +75,7 @@ header nav ul.gnb > li:hover {
 }
 header nav ul.gnb > li > a {
   display: block;
-  width: 180px;
+  width: 100%;
   line-height: 90px;
   font-weight: 500;
   font-size: 19px;
@@ -88,9 +89,12 @@ header nav ul.gnb > li > ul > li > a {
   color: #333;
   border-top: 1px solid #eee;
 }
+header nav ul.gnb > li.on {
+  border-top: 4px solid red;
+}
 
 main {
-  padding: 90px 0 70px 0;
+  padding: 90px 0 0 0;
 }
 
 .wrapper {
@@ -101,11 +105,11 @@ main {
 /* s: main-page */
 .mainTop {
   position: relative;
-  height: 700px;
 }
 .mainTop .m-visual {
-  height: 540px;
-  background-color: #f0f0f0;
+  height: 640px;
+  background: url(../images/m-visual.png) no-repeat center center;
+  background-size: cover;
 }
 .mainTop .m-visual .m-text {
   position: absolute;
@@ -127,32 +131,67 @@ main {
 .mainTop .mTop-boxs {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
   position: absolute;
   left: 50%;
-  top: 330px;
+  top: 230px;
   transform: translateX(-50%);
   width: 1200px;
   z-index: 1;
 }
 .mainTop .mTop-boxs > div {
-  width: 49%;
-  height: 300px;
-  background-color: #fff;
-  border: 1px solid #000;
+  flex: 1;  
+  background-color: #366aff;
   border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 3px 3px 20px rgba(0,0,0,.1);
 }
 .mainTop .mTop-boxs > div h3 {
-  font-size: var(--bigFont);
-  color: var(--color-deepblue);
+  font-size: 1.85rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.mainTop .mTop-boxs > div > ul > li {
+  padding: 3px;
+}
+.mainTop .mTop-boxs > div > ul > li > a {
+  position: relative;
+  display: block;
+  color: #fff;
+  line-height: 55px;
+  background-color: rgba(0,0,0,0.1);
+  border:1px solid rgba(255,255,255,.3);
+  border-radius: 10px;
+  padding: 0 20px;
+  transition: .3s;
+}
+.mainTop .mTop-boxs > div > ul > li > a::before {
+  content: url(../images/m-arrow.svg);
+  position: absolute;
+  top: 5px;
+  right: 20px;  
+  width: 25px;
+  opacity: .4;
+}
+
+.mainTop .mTop-boxs > div > ul > li > a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+.mainTop .mTop-boxs > div.m_research {
+  background-color: #6f4ee8;
+}
+.mainTop .mTop-boxs > div.m_support {
+  background-color: #2291b1;
 }
 
 .boardArea {
   display: flex;
   justify-content: space-between;
-  padding-top: 70px;
 }
 .boardArea > div {
   width: 30%;
+  padding: 50px 0 60px;
 }
 .boardArea > div:nth-child(2) {
   width: 40%;
@@ -194,6 +233,14 @@ main {
   font-size: var(--smFont);
   color: var(--color-grey);
 }
+.boardArea > div .mBox-layout ul li span.m-label {
+  display: inline-block;
+  color: #fff;
+  background-color: #727e97;
+  padding: 1px 7px 1px 5px;
+  margin-right: 3px;
+  border-radius: 5px;
+}
 
 .boardArea > div .mBox1 {
   margin-right: 40px;
@@ -227,6 +274,17 @@ main {
   position: relative;
   border-bottom: 1px solid #eee;
 }
+.bdNone {
+  border:none;
+}
+
+.m-links {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+}
+
 /* e: main-page */
 
 .giants {
@@ -237,7 +295,7 @@ footer {
   text-align: center;
   background-color: #fff;
   border-top: 1px solid #ddd;
-  padding: 20px;
+  padding: 40px 0;
 }
 footer .inner {
   display: flex;
@@ -253,6 +311,9 @@ footer .inner .bottomMenu > ul {
   body {
     font-size: 14px;
   }
+  body#main {
+    background-color: #f9f9f9;
+  } 
   header {
     width: 100%;
     height: 60px;
@@ -323,7 +384,7 @@ footer .inner .bottomMenu > ul {
     padding-left: 15px;
     background-color: rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
+  }  
   header nav ul.gnb > li > ul {
     margin-bottom: 10px;
   }
@@ -341,11 +402,10 @@ footer .inner .bottomMenu > ul {
   }
 
   .mainTop {
-    height: 400px;
-    background-color: #ccc;
+    height: 1110px;
   }
   .mainTop .m-visual {
-    height: 100%;
+    height: 450px;    
   }
   .mainTop .m-visual .m-text {
     top: 50px;
@@ -364,6 +424,23 @@ footer .inner .bottomMenu > ul {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    padding: 30px;
+  }
+  .mainTop .mTop-boxs .inner-box {
+    gap: 15px;
+  }
+  .mainTop .mTop-boxs .inner-box dl dd {
+    padding-top:3px;
+    font-size: 1em;
+  }
+  .mainTop .mTop-boxs .inner-box dl dd.date {
+    font-size: var(--smFont);
+  }
+  .mainTop .mTop-boxs table th {
+    width: 70%;
+  }
+  .mainTop .mTop-boxs table td {
+    width: 30%;
   }
 
   .wrapper {
@@ -379,6 +456,7 @@ footer .inner .bottomMenu > ul {
   .boardArea > div:nth-child(2) {
     width: 100%;
     border-left: none;
+    border-right: none;
   }
   .boardArea > div .mBox-layout {
     height: 100%;

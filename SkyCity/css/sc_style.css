@@ -4,7 +4,7 @@
 
 :root {
 	--fontNormal: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;;
-  }
+}
 
 html {font-size: 18px;}
 
@@ -43,7 +43,7 @@ body {
 	font-size: 14px;
 	padding: 1px 0;
 	border-bottom: 1px solid #333;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.4);
 }
 .topNotice > div {
 	display: flex;
@@ -62,9 +62,6 @@ body {
 	flex: 1;
 }
 
-.sc_header {
-	background: url(../images/sc-bg-body.png) repeat-x left bottom;	
-}
 .sc_header .sc_util {
 	display: flex;
 	justify-content: space-between;
@@ -308,7 +305,7 @@ body {
 	background-color: #e04d4d;
 }
 .sc_news_inner > div table td {
-	border-top:1px solid #212121;
+	border-bottom:1px solid #212121;
 	letter-spacing: -0.06rem;
 	line-height: 60px;
 	text-align: left;
@@ -321,6 +318,25 @@ body {
 .sc_news_inner a {
 	color: #212121;
 }
+
+.vertical_banner {
+	overflow: hidden;
+	width: 100%;
+	height: 304px;
+}
+.vertical_banner2 {
+	overflow: hidden;
+	width: 100%;
+	height: 304px;
+}
+@keyframes verticalRolling {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-100%);
+	}
+  }
 
 .sc_links {
 	display: flex;
@@ -524,6 +540,67 @@ body {
 	background-color: rgba(0,0,0,.8);
 }
 
+.sc_qa {
+	margin-top:30px;
+}
+.sc_qa input,
+.sc_qa textarea {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+.sc_qa textarea {
+	height: 150px;
+}
+.sc_qa_list {
+	border-bottom: 1px solid #555;
+}
+.sc_qa_list .question {
+	display: flex;
+	justify-content: space-between;	
+	text-align: left;
+	border-top:1px solid #555;
+	padding: 15px 5px;
+	cursor: pointer;
+}
+.sc_qa_list .question > div > span {
+	display: inline-block;
+	font-size: 1rem;
+	background-color: rgba(62,97,248,.3);
+	padding: 10px;
+	margin-right: 5px;
+}
+.sc_qa_list .question .sbn-del {
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 2rem;
+	background-color: #000;
+	padding: 0 20px;
+	border: 1px solid #555;	
+}
+.sc_qa_list .answer {
+	display: none; padding:0;
+}
+.sc_qa_list .answer div {
+	color: #333;
+	background-color: #fff;
+	text-align: left;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 10px 10px 30px 10px;
+}
+.sc_qa_list .answer div dl dt {
+	color: #fff;
+	background-color: #727a9e;
+	border-radius: 7px;
+	padding: 10px;
+}
+.sc_qa_list .answer div dl dd {
+	padding: 20px;
+}
+
 .sc_login-bg {	
 	width: 100%;
 	height: 100%;
@@ -643,7 +720,7 @@ body {
 .sc_join .autoNum span,
 .sc_join .autoNum input,
 .sc_join .autoNum .btn-icon {
-	display:block;
+	display: inline-block;
 	height: 70px;
 	background-color: #fff;
 	vertical-align: middle;
@@ -669,7 +746,7 @@ body {
 	text-align: center;
 	background-color: #000;
 	height: 90px;
-	text-indent: -9999px;
+	text-indent: -9980px;
 	border-top: 1px solid #333;
 	margin-top: 50px;
 }
@@ -690,6 +767,78 @@ body {
 	width: 150px;
 }
 
+/******  개발적용 후 삭제 ******/
+.popupBtn {
+	position: absolute;
+	left:0; top:0;
+	text-indent: 0px;
+}
+.popupBtn a {
+	display: inline-block;
+	margin:0 5px;
+}
+/****** 개발적용 후 삭제 ******/
+
+/** 메인팝업 **/
+.popup {
+	display:none;
+	position:fixed;
+	top:20px;
+	width:480px;
+	height: 590px;
+	overflow-y: auto;
+	color: #333;
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.7);
+	z-index: 99999px;
+}
+.popup img {
+	width: 100%;
+}    
+.popup h3 {
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.popup .sc-popup-inner {
+	padding: 20px 0 50px;
+}
+.popup .sc-popup-inner > div {
+	border-top: 1px solid #333;
+	padding: 20px;
+}
+.popup .sc-red {
+	color: #cc0000;
+}
+.popup .close {
+	position: absolute;
+	right:20px;
+	bottom: 15px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	padding: 5px 10px;
+	border:1px solid #777;
+	border-radius: 5px;
+	background-color: #101010;
+}
+.popup .close.onehour {
+	right: 280px;
+}
+
+.modal1 {
+	left:10px;
+}
+.modal2 {
+	left:500px;
+}
+.modal3 {
+	left:990px;
+}
+
 /** button **/
 .sc_btnList {
 	display: inline-block;
@@ -700,6 +849,17 @@ body {
 }
 .sc_btnList:hover {
 	background-color: #47709e;
+}
+.sc_btnRed, 
+.sc_btnBlue{
+	display: inline-block;
+	background-color: #d94242;
+	padding: 20px;
+	border-radius: 10px;
+	transition: .3s;
+}
+.sc_btnBlue {
+	background-color: #3e61f8;
 }
 .btn_fullwidth {
 	display: block;
@@ -730,8 +890,11 @@ a {
 	color: #fff;
 }
 ::placeholder {
-	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;		
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;	
+	color: #999;	
 }
 .taLeft {text-align: left !important; padding: 0 20px !important;}
 .taRight {text-align: right;}
 .mgEtc {margin: 30px 0;}
+
+

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/sc_style.css">   
 	<link rel="stylesheet" type="text/css" href="css/sc_style_mob.css">        
 </head> 
+
 <body>
 <!------ include:top ------>
 	<div id="sc_fullWrapper">
@@ -84,61 +85,102 @@
 			<!-- wrapper -->
 			<div class="sc_wrapper sc_sub">
 				
-				<!-- 출금신청 -->
+				<!-- 문의하기 -->
 				<section class="sc_subBox">
-					<h3 class="sc-m-title">출금신청</h3>
+					<h3 class="sc-m-title">문의하기</h3>
 
 					<div class="sc_inner">
-						<div class="sc-tab">    
-                            <a href="withdraw.html" class="on">출금신청</a>
-                            <a href="withdraw_view.html">출금내역</a>
+                        <div class="sc_qa">
+                            <div>
+								<input type="text" placeholder="문의제목을 입력해주세요." />
+								<textarea placeholder="문의내용을 입력해주세요."></textarea>
+							</div>
+
+							<div class="mgEtc">
+								<a href="#" class="sc_btnRed">계좌문의하기</a>
+								<a href="#" class="sc_btnBlue">작성완료</a>
+							</div>
                         </div>
 
-                        <div class="sc-moneyInfo">
-                            <p>출금신청전 확인해 주세요.</p>
-                            <ul>
-                                <li>출금신청 전 롤링상태를 확인 후에 환전신청을 요청해 주셔야 빠른 출금 진행을 해드릴 수 있습니다.</li>
-								<li>롤링상태 100% 이상일 시 환전이 가능하오니 참고해 주시기 바랍니다.</li>
-								<li>롤링상태의 기준은 충전한 금액을 기준으로 하여 플레이 금액으로 % 표시됩니다.</li>
-								<li>롤링상태 미확인 후 출금신청 시 출금신청 요청 후 10분 이상 출금신청이 지연될 수 있습니다.</li>
-								<li>롤링상태 미확인 후 출금신청 시 롤링상태 100%가 미달되었을 경우 출금요청이 취소될 수 있습니다.</li>
-								<li>출금 신청 전에는 꼭! 롤링상태를 확인하시고 출금신청을 해주시기 바랍니다.</li>
-								<li>롤링상태 확인은 마지막 배팅 시간의 최대 10분안에 모든 내역을 확인하실 수 있습니다.</li>
-								<li>짧은 플레이 타임 시간에서는 바로 롤링상태를 확인이 불가능하오니 10분후에 신청해 주셔야합니다.</li>
-                            </ul>
-                        </div>
-
-                        <div class="sc-moneyTable">
-                            <dl>
-								<dt>보유금액</dt>
-                                <dd>
-                                    0원
-									(최저 10,000원부터 출금이 가능합니다.)
-                                </dd>
-                                <dt>입금금액</dt>
-                                <dd>
-                                    <input type="text" value="0" />
-
-                                    <div class="funcBtn">
-                                        <a href="#">10,000<span>원</span></a>
-                                        <a href="#">30,000<span>원</span></a>
-                                        <a href="#">50,000<span>원</span></a>
-                                        <a href="#">100,000<span>원</span></a>
-                                        <a href="#">300,000<span>원</span></a>
-                                        <a href="#">500,000<span>원</span></a>
-                                        <a href="#">1,000,000<span>원</span></a>
-                                        <a href="#" class="delete">지우기</a>
-                                    </div>
-                                </dd>
-                            </dl>
-
-                            <a herf="#" class="btn_big"><span>입금신청</span></a>
-                        </div>
-
+						<!-- 아코디언 -->
+						<div class="sc_qa_list">
+							<h3 class="question">
+								<div>
+									<span>답변 : 완료</span>
+									계좌문의합니다.(한국)
+								</div>
+								<a href="#" class="sbn-del">삭제</a>
+							</h3>
+							<div class="answer">
+								<div>
+									<dl>
+										<dt>문의내용</dt>
+										<dd>
+											상세 문의 내용입니다.
+										</dd>
+									</dl>
+									<dl>
+										<dt>문의답변</dt>
+										<dd>
+											문의에 대한 답변입니다.
+										</dd>
+									</dl>
+								</div>
+							</div>
+					
+							<h3 class="question">
+								<div>
+									<span>답변 : 미확인</span>
+									계좌문의합니다.(한국)
+								</div>
+								<a href="#" class="sbn-del">삭제</a>
+							</h3>
+							<div class="answer">
+								<div>
+									<dl>
+										<dt>문의내용</dt>
+										<dd>
+											상세 문의 내용입니다.
+										</dd>
+									</dl>
+									<dl>
+										<dt>문의답변</dt>
+										<dd>
+											문의에 대한 답변입니다.
+										</dd>
+									</dl>
+								</div>
+							</div>
+					
+							<h3 class="question">
+								<div>
+									<span>답변 : 완료</span>
+									계좌문의합니다.(한국)
+								</div>
+								<a href="#" class="sbn-del">삭제</a>
+							</h3>
+							<div class="answer">
+								<div>
+									<dl>
+										<dt>문의내용</dt>
+										<dd>
+											상세 문의 내용입니다.
+										</dd>
+									</dl>
+									<dl>
+										<dt>문의답변</dt>
+										<dd>
+											문의에 대한 답변입니다.
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!-- //아코디언 -->
 					</div>
 
 				</section>
-				<!-- //출금신청 -->
+				<!-- //문의하기 -->
 				
 			</div>
 			<!-- //wrapper -->
@@ -152,7 +194,5 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/sc-ui.js"></script> 
-
-	
 </body>
 </html>
